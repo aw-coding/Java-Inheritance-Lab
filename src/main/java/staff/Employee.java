@@ -18,20 +18,28 @@ public abstract class Employee {
         return name;
     }
 
-    public double getSalary() {
-        return salary;
-    }
-
+    public double getSalary() { return salary; }
 
     public String getNiNumber() {
         return NiNumber;
     }
 
-    public void raiseSalary(double multiplier) {
-        salary = salary * multiplier;
+    public void setName(String newName){
+        if(newName != null ){
+            name = newName;
+        }
     }
-    
+
+
+    public void raiseSalary(double multiplier) {
+        if (multiplier > 1) {
+            salary = salary * multiplier;
+        }
+    }
+
+
     public void payBonus(){ 
         salary = salary * 1.01;
     }
+
 }
