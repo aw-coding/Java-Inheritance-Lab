@@ -29,6 +29,9 @@ public class Employee {
 
     public void raiseSalary(double multiplier) {
         salary = salary * multiplier;
-
+    }
+    
+    public void payBonus(){ 
+        salary = salary * 1.01;
     }
 }
