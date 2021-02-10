@@ -1,31 +1,12 @@
 package techStaff;
 
+import staff.Employee;
 
-public class Developer {
+public class Developer extends Employee{
 
-    private String name;
-    private int salary;
-    private String NiNumber;
+    public Developer(String name, int salary, String NiNumber ) {
 
-//
-
-    public Developer(String name, int salary, String NiNumber) {
-
-        this.name = name;
-        this.salary = salary;
-        this.NiNumber = NiNumber;
-    }
-        public String getName(){
-            return name;
-        }
-
-    public int getSalary() {
-        return salary;
-    }
-
-
-    public String getNiNumber() {
-        return NiNumber;
+        super(name, salary, NiNumber);
     }
 }
 
