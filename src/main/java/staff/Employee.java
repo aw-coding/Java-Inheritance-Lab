@@ -1,6 +1,6 @@
 package staff;
 
-public class Employee {
+public abstract class Employee {
 
 
     private String name;
@@ -9,11 +9,11 @@ public class Employee {
 
 
     public Employee(String name, double salary, String NiNumber) {
-
         this.name = name;
         this.salary = salary;
         this.NiNumber = NiNumber;
     }
+
     public String getName(){
         return name;
     }

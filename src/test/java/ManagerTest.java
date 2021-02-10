@@ -46,5 +46,4 @@ public class ManagerTest {
         assertEquals("Finance", manager.getDepartmentName());
     }
 
-
 }
