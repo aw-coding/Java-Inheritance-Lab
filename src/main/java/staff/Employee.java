@@ -4,11 +4,11 @@ public class Employee {
 
 
     private String name;
-    private int salary;
+    private double salary;
     private String NiNumber;
 
 
-    public Employee(String name, int salary, String NiNumber) {
+    public Employee(String name, double salary, String NiNumber) {
 
         this.name = name;
         this.salary = salary;
@@ -18,12 +18,17 @@ public class Employee {
         return name;
     }
 
-    public int getSalary() {
+    public double getSalary() {
         return salary;
     }
 
 
     public String getNiNumber() {
         return NiNumber;
+    }
+
+    public void raiseSalary(double multiplier) {
+        salary = salary * multiplier;
+
     }
 }

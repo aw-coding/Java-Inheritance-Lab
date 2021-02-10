@@ -21,12 +21,19 @@ public class DeveloperTest {
 
     @Test
     public void hasSalary(){
-        assertEquals(32000, developer.getSalary());
+        assertEquals(32000, developer.getSalary(), 0.1);
     }
 
     @Test
     public void hasNiNumber(){
         assertEquals("12345678J", developer.getNiNumber());
     }
+
+    @Test
+    public void canRaiseSalary(){
+        developer.raiseSalary(1.5);
+        assertEquals(48000, developer.getSalary(), 0.1);
+    }
+
 
 }
